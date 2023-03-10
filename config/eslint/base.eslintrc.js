@@ -18,7 +18,7 @@ module.exports = {
   rules: {
     camelcase: 'error',
     'no-console': 'error',
-    'no-unused-vars': ['error', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
+    'no-unused-vars': ['off', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
     '@typescript-eslint/no-unused-vars': [
       'error',
       { argsIgnorePattern: '^_', varsIgnorePattern: '^_' },

@@ -28,6 +28,5 @@ module.exports = {
     'react/jsx-key': 'off',
     'react/react-in-jsx-scope': 'off',
     'jsx-quotes': ['error', 'prefer-double'],
-    // '@typescript-eslint/no-unused-vars': ['error'],
   },
 }
