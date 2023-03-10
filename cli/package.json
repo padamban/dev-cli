@@ -8,12 +8,12 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "npm run build -- --watch",
     "lint": "tsc"
   },
   "dependencies": {},
   "devDependencies": {
-    "@changesets/cli": "^2.26.0",
-    "tsup": "^6.5.0",
+    "tsup": "6.5.0",
     "typescript": "4.9.5"
   }
 }
