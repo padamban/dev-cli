@@ -1,6 +1,6 @@
 {
-  "name": "dev-cli",
-  "version": "0.0.0",
+  "name": "@pulchritude/dev-cli",
+  "version": "0.0.1",
   "license": "MIT",
   "private": false,
   "main": "dist/index.js",

@@ -12,7 +12,13 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "test": "vitest run --coverage=false",
+    "test:w": "vitest --watch --coverage=false",
+    "test:ui": "vitest --ui --coverage=false",
+    "test:cc": "vitest run --coverage=true",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "cs": "npx changeset",
+    "publish-packages": "turbo run build lint test && changeset version && changeset publish"
   },
   "dependencies": {
     "@changesets/cli": "2.26.0"
@@ -20,6 +26,7 @@
   "devDependencies": {
     "config.eslint": "*",
     "config.tsconfig": "*",
+    "config.vitest": "*",
     "prettier": "latest",
     "turbo": "latest"
   },
