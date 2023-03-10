@@ -1,10 +1,4 @@
 module.exports = {
+  ...require('config.eslint/base.eslintrc.js'),
   root: true,
-  // This tells ESLint to load the config from the package `eslint-config-custom`
-  extends: ["custom"],
-  settings: {
-    next: {
-      rootDir: ["apps/*/"],
-    },
-  },
-};
+}

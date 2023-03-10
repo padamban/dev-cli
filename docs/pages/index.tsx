@@ -1,10 +1,10 @@
-import { Button } from "ui";
+import _fs from 'fs'
+import _path from 'path'
 
 export default function Docs() {
   return (
-    <div>
+    <div className="e2323">
       <h1>Docs</h1>
-      <Button />
     </div>
-  );
+  )
 }
