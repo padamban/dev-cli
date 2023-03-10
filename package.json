@@ -18,7 +18,7 @@
     "test:cc": "vitest run --coverage=true",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "cs": "npx changeset",
-    "publish-packages": "turbo run build lint test && changeset version && changeset publish"
+    "release": "turbo run build lint test && changeset version && changeset publish"
   },
   "dependencies": {
     "@changesets/cli": "2.26.0"
