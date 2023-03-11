@@ -21,13 +21,13 @@ jobs:
           node-version: 16
 
       - name: Install Dependencies
-        run: npm i
+        run: pnpm i
 
-      - name: Publish to npm
+      - name: Publish to npm with changeset
         id: changesets
         uses: changesets/action@v1
         with:
-          publish: npm run release
+          publish: pnpm release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
